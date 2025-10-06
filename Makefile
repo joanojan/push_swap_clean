@@ -132,7 +132,8 @@ valgrind: $(NAME)
 	./$(NAME) 3 2 1 > /dev/null 2>&1 && echo "  \
 	✓ No memory leaks detected" || echo "  ✗ Memory issues found"'
 	@echo
-	@echo "2. Medium size test (50 elem# arg=$(seq 1 100 | shuf | tr "\n" " "); ./push_swap $arg | wc -l
+	@echo "2. Medium size test \
+	(50 elem# arg=$(seq 1 100 | shuf | tr "\n" " "); ./push_swap $arg | wc -l
 	@bash -c 'arg=$$(seq 1 50 | shuf | tr "\n" " ") && \
 	valgrind --leak-check=full --show-leak-kinds=all \
 	--track-origins=yes --error-exitcode=1 \
