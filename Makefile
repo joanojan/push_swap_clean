@@ -42,17 +42,21 @@ SRCS := \
 OBJS := $(SRCS:.c=.o)
 OBJS := $(patsubst %,$(OBJS_DIR)/%,$(OBJS))
 
+# Header dependencies
+HEADERS := includes/push_swap.h
+
 all: $(NAME)
 
-$(NAME): $(OBJS)
+$(NAME): $(OBJS) Makefile
 	$(CC) $(CFLAGS) $(OBJS) -o $(NAME)
 
-$(OBJS_DIR)/%.o: %.c
+$(OBJS_DIR)/%.o: %.c $(HEADERS) Makefile
 	mkdir -p $(dir $@)
 	$(CC) $(CFLAGS) $(INCS) -c $< -o $@
 
 clean:
 	rm -f $(OBJS)
+	rm -rf $(OBJS_DIR)
 
 fclean: clean
 	rm -f $(NAME)
