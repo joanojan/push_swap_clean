@@ -1,0 +1,17 @@
+# Folder where I am trying things
+homless_code
+
+# Build dir (contains all object files)
+objs/
+
+# Binary
+push_swap
+a.out
+
+# Debug / sanitizer
+core
+core.*
+vg.log
+
+# Editors
+.vscode/
