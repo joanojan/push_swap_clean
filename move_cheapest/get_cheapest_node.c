@@ -6,14 +6,14 @@
 /*   By: jvila-va <jvila-va@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/03 15:23:40 by jvila-va          #+#    #+#             */
-/*   Updated: 2025/10/03 16:14:44 by jvila-va         ###   ########.fr       */
+/*   Updated: 2025/10/07 22:42:05 by jvila-va         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
 /**
- *  make sure the indices and targets are set, compute the costs and
+ *  make sure the indices and targets are set, (needed to) compute the costs and
  *  return the node from b with minimal targe move_plan cost.
  */
 

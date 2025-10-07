@@ -6,14 +6,15 @@
 /*   By: jvila-va <jvila-va@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/03 16:18:26 by jvila-va          #+#    #+#             */
-/*   Updated: 2025/10/03 16:20:19 by jvila-va         ###   ########.fr       */
+/*   Updated: 2025/10/07 22:21:04 by jvila-va         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
 /**
- *  reverse rotate the elements below half plus one down in the stack.
+ * Brings the node n to the top of the stack: rotate the upper nodes or
+ * reverse rotate the elements below half plus one.
  */
 
 static void	bring_to_top(t_stack *s, t_node *n)
